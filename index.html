@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a95e2c876b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Memory Cards</title>
+  </head>
+  <body>
+    <div class="heading">
+      <h2>Memory Cards</h2>
+      <button class="add-new-card" id="add-new-card">
+        <i class="fas fa-plus"></i> Add New Card
+      </button>
+    </div>
+    <div class="card-container" id="card-container">
+      <!-- <div class="card active">
+        <div class="inner-card">
+          <div class="inner-card-front">
+            <p class="question">What is your name?</p>
+          </div>
+          <div class="inner-card-back">
+            <p class="answer">Prateek Jain</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="inner-card">
+          <div class="inner-card-front">
+            <p class="question">What is your age?</p>
+          </div>
+          <div class="inner-card-back">
+            <p class="answer">24</p>
+          </div>
+        </div>
+      </div> -->
+    </div>
+    <div class="prev-next">
+      <button class="prev" id="prev"><i class="fas fa-angle-left"></i></button>
+      <p class="card-info" id="card-info"></p>
+      <button class="next" id="next"><i class="fas fa-angle-right"></i></button>
+    </div>
+    <button class="clear" id="clear">
+      <i class="fas fa-trash-alt"></i> Clear Cards
+    </button>
+    <div class="question-container" id="question-container">
+      <div class="question-sub-container">
+        <h2>Add New Container</h2>
+        <label for="question">Question:</label>
+        <textarea
+          id="question"
+          cols="30"
+          rows="10"
+          placeholder="Enter question.."
+        ></textarea>
+        <label for="answer">Answer:</label>
+        <textarea
+          id="answer"
+          placeholder="Enter answer.."
+          cols="30"
+          rows="10"
+        ></textarea>
+        <button class="add-card" id="add-card">
+          <i class="fas fa-plus"></i> Add Card
+        </button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
